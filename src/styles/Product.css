@@ -1,0 +1,31 @@
+.product-main {
+    width: 95%;
+    height: 100%;
+}
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.search-drop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+.product-heading {
+    margin-left: 2vw;
+}
+.table-dynamic-rowmain {
+    display: flex;
+    align-items: center;
+}
+.img-table {
+    width: 12%;
+}
+.table-row-heading {
+    margin-left: 1vw;
+}
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-lh2rv6-MuiAutocomplete-root .MuiOutlinedInput-root {
+    color: rgba(183, 183, 183, 1)
+}

@@ -1,0 +1,64 @@
+.mc-main {
+    width: 20vw;
+    height: 100vh;
+    padding: 5px;
+    background-color: rgba(4, 4, 64,1);
+}
+.mc-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px;
+}
+.dsh-icon {
+    display: flex;
+    align-self: center;
+}
+.mc-body {
+    height: 70%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.dsh-menuItem-0, .dsh-menuItem-1, .dsh-menuItem-2, .dsh-menuItem-3, .dsh-menuItem-4, .dsh-menuItem-5 {
+    padding: 3px;
+    display: flex;
+    height: 7%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.dsh-menuItem-0 {
+    background-color: rgba(45, 45, 105, 1);
+    border-radius: 10px;
+}
+.menuLeftIcon {
+    display: flex;
+    align-self: center;
+    width: 10%;
+}
+.menuRightIcon {
+    display: flex;
+    align-self: center;
+    width: 10%
+}
+.menuContent {
+    display: flex;
+    align-self: center;
+    width: 70%
+}
+.mc-footer {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 5vh;
+}
+.aside-user {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(45, 45, 105, 1);
+    border-radius: 10px;
+    align-items: center;
+}
+.footer-img-name {
+    display: flex;
+}
+
+
