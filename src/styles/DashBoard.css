@@ -60,5 +60,15 @@
 .footer-img-name {
     display: flex;
 }
+@media (max-width: 900px) {
+    .mc-main {
+        height: 200vh;
+    }
+}
+ @media (max-width: 768px) {
+    .mc-main {
+        height: 300vh;
+    }
+ }
 
 
