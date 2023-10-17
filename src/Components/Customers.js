@@ -14,6 +14,9 @@ export default function Customers() {
             dataLabels: {
                 enabled: false
             },
+            // legend: {
+            //     show: false
+            // },
             plotOptions: {
                 pie: {
                     donut: {
@@ -22,20 +25,21 @@ export default function Customers() {
                             total: {
                                 show: false,
                                 // showAlways: true,
-                                label: '65%'
+                                // label: '65%'
                             }
                         }
                     }
                 }
             },
             responsive: [{
-                breakpoint: 768,
+                breakpoint: 900,
                 options: {
                     chart: {
-                        // width: '30vw'
+                        width: 270
                     },
                     legend: {
-                        position: 'bottom'
+                        // position: 'bottom'
+                        show: false
                     }
                 }
             }]

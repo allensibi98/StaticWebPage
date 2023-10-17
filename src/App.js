@@ -1,7 +1,6 @@
 import React from 'react';
 import DashBoard from './Components/DashBoard';
 import MainContent from './Components/MainContent';
-import Product from './Components/Products';
 
 function App() {
   return (

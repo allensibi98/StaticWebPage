@@ -84,10 +84,10 @@ export default function MainContent() {
             </div>
             <div className='center-part'>
                 <Grid container spacing={2} sx={{justifyContent: 'space-around'}}>
-                    <Grid item xs={10} md={7}>
+                    <Grid item sm={10} md={7}>
                         <OverView />
                     </Grid>
-                    <Grid item xs={8} md={3}>
+                    <Grid item sm={8} md={3}>
                         <Customers />
                     </Grid>
                 </Grid>

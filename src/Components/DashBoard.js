@@ -27,14 +27,14 @@ export default function DashBoard() {
             </div>
             <div className='mc-body'>
                 {menus.map((item, ind) => <div key={ind} className={'dsh-menuItem-' + ind}>
-                    <div className='menuLeftIcon' style={{ marginRight: '5px' }}>
+                    <div className='menuLeftIcon' style={{ marginRight: '1vw' }}>
                         {Icons[ind]}
                     </div>
-                    <div className='menuContent' style={{ marginLeft: '5px' }}>
+                    <div className='menuContent' style={{ marginLeft: '1vw' }}>
                         <h6 style={{ color: 'white' }}>{item}</h6>
                     </div>
                     <div className='menuRightIcon'>
-                        {ind != 0 && <div>
+                        {ind !== 0 && <div>
                             <KeyboardArrowRightOutlinedIcon fontSize='small' sx={{ color: 'white' }} />
                         </div>}
                     </div>
@@ -44,9 +44,9 @@ export default function DashBoard() {
             <div className='mc-footer'>
                 <div className='aside-user'>
                     <div className='footer-img-name'>
-                        <img src='avatar.png' width='30%' height='30%' />
-                        <div style={{marginLeft: '1vh', alignSelf: 'center'}}>
-                            <div style={{ color: 'white' }}>Evana</div>
+                        <img src='avatar.png' width='30%' height='30%' alt='avatar'/>
+                        <div style={{marginLeft: '1vw', alignSelf: 'center'}}>
+                            <div style={{ color: 'white', fontSize: '2vh' }}>Evana</div>
                             <div style={{color: 'rgba(183, 183, 183, 1)', fontSize: '1vw'}}>Project Manager</div>
                         </div>
                     </div>

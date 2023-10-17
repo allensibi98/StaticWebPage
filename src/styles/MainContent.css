@@ -34,8 +34,9 @@
 }
 .searchArea {
     align-self: center;
-    margin-right: 5px;
+    margin-right: 2vw;
     background-color: white;
+    width: 15%;
 }
 
 /* @media (max-width: 768px) {

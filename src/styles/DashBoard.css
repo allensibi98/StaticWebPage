@@ -46,9 +46,9 @@
 }
 .mc-footer {
     padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 6px;
+    /* height: 5vh; */
 }
 .aside-user {
     display: flex;
@@ -67,7 +67,7 @@
 }
  @media (max-width: 768px) {
     .mc-main {
-        height: 300vh;
+        height: 250vh;
     }
  }
 
