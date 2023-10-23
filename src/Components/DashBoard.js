@@ -44,7 +44,7 @@ export default function DashBoard() {
             <div className='mc-footer'>
                 <div className='aside-user'>
                     <div className='footer-img-name'>
-                        <img src='avatar.png' width='30%' height='30%' alt='avatar'/>
+                        <img src={require('../images/avatar.png')} width='30%' height='30%' alt='avatar'/>
                         <div style={{marginLeft: '1vw', alignSelf: 'center'}}>
                             <div style={{ color: 'white', fontSize: '2vh' }}>Evana</div>
                             <div style={{color: 'rgba(183, 183, 183, 1)', fontSize: '1vw'}}>Project Manager</div>

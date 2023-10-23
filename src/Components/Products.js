@@ -14,7 +14,7 @@ export default function Product() {
             stock: '32 stocks',
             price: '$34',
             TotalSales: '20',
-            image: 'pic3.jpg',
+            image: require('../images/pic3.jpg'),
         },
         {
             productName: 'Sarphens Illustration',
@@ -22,7 +22,7 @@ export default function Product() {
             stock: '32 stocks',
             price: '$50',
             TotalSales: '20',
-            image: 'pic1.jpg'
+            image: require('../images/pic1.jpg')
         }
     ]
 
