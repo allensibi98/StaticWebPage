@@ -51,7 +51,7 @@ export default function Customers() {
             <Paper sx={{ height: '100%', borderRadius: '10px' }} elevation={3}>
                 <div className='header'>
                     <div className='headings'>
-                        <b>Customers</b>
+                        <b data-testid='customer' >Customers</b>
                         <p style={{ fontFamily: 'initial', color: 'rgba(183,183,183,1)' }}>Customers that buy products</p>
                     </div>
                 </div>

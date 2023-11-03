@@ -3,7 +3,6 @@ import { Paper } from '@mui/material';
 import '../styles/ListItem.css';
 
 export default function ListItem({ mainIcon, heading, amount, percentage, arrowIcon, circleBgColor, loss }) {
-console.log(circleBgColor,'cc')
 
     return <>
         <div className='SingleListMain'>

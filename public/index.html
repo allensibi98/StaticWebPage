@@ -15,6 +15,25 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Jasmine For Unit Testing
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"></link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"></script>
+
+    <script>
+      var abc = {
+        test: 1,
+        name: 'Unit Test'
+      }
+
+      describe("abc", () => {
+        it("Test", () => {
+          expect(abc.test).toBe(2);
+        })
+      })
+    </script> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -29,6 +48,8 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!-- <script src="../build/static/js/main.333f8d18.js"></script> -->
+    <!-- <script src="server.js"></script> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import ListItem from './ListItem';
 import { TextField, InputAdornment, Grid } from '@mui/material';
 import '../styles/MainContent.css';
@@ -12,10 +13,35 @@ import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
 import OverView from './OverView';
 import Customers from './Customers';
 import Product from './Products';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchValueClear, setSearchValue } from '../reducers/mainContentReducer';
 
 export default function MainContent() {
 
-    const [search, setSearch] = useState('');
+    const dispatch = useDispatch();
+    const { reload, mainContentData } = useSelector(({mainContentReducer}) => mainContentReducer);
+    const { search } = mainContentData;
+    const apiUrl = 'http://localhost:3001/StaticWebPage/api/search'
+
+    // useEffect(() => {
+    //     dispatch(setSearchValueClear());
+
+    // }, [])
+
+    const handleSearch = () => {
+        axios.post(apiUrl, {search: search})
+        .then(res => {
+            console.log(res.data, 'rsss')
+        })
+        .catch(err => {
+            console.log(err,'eer')
+        })
+    }
+    const handleSearchValue = (e) => {
+        dispatch(setSearchValue({
+            search: e.target.value
+        }))
+    }
 
     return <>
         <div className='mainContent'>
@@ -31,7 +57,8 @@ export default function MainContent() {
                                     <SearchIcon />
                                 </InputAdornment>
                             ),
-                        }} value={search} onChange={(e) => setSearch(e.target.value)} />
+                        }} value={search} onChange={(e) => handleSearchValue(e)} />
+                        {/* <button onClick={() => handleSearch()} >Search</button> */}
                 </div>
             </div>
             <div className='listItems'>
